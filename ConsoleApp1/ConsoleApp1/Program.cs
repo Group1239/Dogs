@@ -21,14 +21,14 @@ namespace Adoptions
                 if (answer1 == "Dog")
                 {
                     Console.WriteLine("Oh okey you want a " + answer1 + " let's see what we have here");
-                    Console.WriteLine("This is what we have " + Dog1 + Dog2 + Dog3 + Dog4);
+                    Console.WriteLine("This is what we have "); //+ Dog1 + Dog2 + Dog3 + Dog4);
                     Console.ReadLine();
                 }
 
                 else if (answer1 == "Cat")
                 {
                     Console.WriteLine("Oh okey you want a " + answer1 + " let's see what we have here");
-                    Console.WriteLine("This is what we have " + Cat1 + Cat2 + Cat3 + Cat4);
+                    Console.WriteLine("This is what we have "); //+ Cat1 + Cat2 + Cat3 + Cat4);
                     Console.ReadLine();
                 }
                 else
