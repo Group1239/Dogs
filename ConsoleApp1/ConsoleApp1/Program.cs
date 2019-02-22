@@ -38,7 +38,7 @@ namespace Adoptions
 
 
 
-    class Red : Animal
+    class Red : Dog
 
     {
 
@@ -84,6 +84,54 @@ namespace Adoptions
 
             this.Color = "White";
             this.Age = "1 year and 2 months old";
+            this.Speak();
+
+        }
+
+    }
+
+    class Magenta : Cat
+
+    {
+
+        public Magenta(string name) : base(name)
+
+        {
+
+            this.Color = "Magenta";
+
+            this.Speak();
+
+        }
+
+    }
+
+    class Cyan : Cat
+
+    {
+
+        public Cyan(string name) : base(name)
+
+        {
+
+            this.Color = "Cyan";
+
+            this.Speak();
+
+        }
+
+    }
+
+    class Yellow : Cat
+
+    {
+
+        public Yellow(string name) : base(name)
+
+        {
+
+            this.Color = "Yellow";
+
             this.Speak();
 
         }
