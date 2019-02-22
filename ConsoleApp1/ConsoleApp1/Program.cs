@@ -28,7 +28,7 @@ namespace Adoptions
 
         {
 
-            Console.WriteLine("My name is " + this.Name + " my color is " + this.Color + "and I am " + this.Age);
+            Console.WriteLine("My name is " + this.Name + " my color is " + this.Color + " and I am " + this.Age);
 
         }
 
@@ -90,11 +90,11 @@ namespace Adoptions
 
     }
 
-    class Magenda : Animal
+    class Bengal : Animal
 
     {
 
-        public Magenda(string name) : base(name)
+        public Bengal(string name) : base(name)
 
         {
              
@@ -106,11 +106,11 @@ namespace Adoptions
 
     }
 
-    class Cyan : Animal
+    class Persian : Animal
 
     {
 
-        public Cyan(string name) : base(name)
+        public Persian(string name) : base(name)
 
         {
 
@@ -218,12 +218,12 @@ namespace Adoptions
                 {
                     Console.WriteLine("Oh okey you want a " + answer1 + " let's see what we have here");
                 Start2:
-                    Console.WriteLine("This is what we have ??????/ number 1; ??????? number 2; ????????? number 3");
+                    Console.WriteLine("This is what we have Bengal number 1; Persian number 2; Siamese number 3");
                     Console.WriteLine("Type in the number of the breed you want to check it out");
                     string cat1 = Console.ReadLine();
                     if (cat1 == "1")
                     {
-                        Animal a = new Red("???????");
+                        Animal a = new Bengal("Bengal");
                         Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
                         string accept = Console.ReadLine();
                         if (accept == "+")
@@ -239,7 +239,7 @@ namespace Adoptions
                     }
                     else if (cat1 == "2")
                     {
-                        Animal b = new Blue("??????");
+                        Animal b = new Persian("Persian");
                         Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
                         string accept = Console.ReadLine();
                         if (accept == "+")
@@ -255,7 +255,7 @@ namespace Adoptions
                     }
                     else if (cat1 == "3")
                     {
-                        Animal c = new Green("????????");
+                        Animal c = new Siamese("Siamese");
                         Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
                         string accept = Console.ReadLine();
                         if (accept == "+")
