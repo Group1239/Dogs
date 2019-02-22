@@ -6,6 +6,89 @@ using System.Threading.Tasks;
 
 namespace Adoptions
 {
+    class Dog
+
+    {
+
+        public Dog(string name)
+
+        {
+
+            this.Name = name;
+
+        }
+
+        public string Name;
+
+        public string Color;
+
+
+
+        public void Speak()
+
+        {
+
+            Console.WriteLine("My name is " + this.Name + " and I am " + this.Color);
+
+        }
+
+
+
+    }
+
+
+
+    class Corgi : Dog
+
+    {
+
+        public Corgi(string name) : base(name)
+
+        {
+
+            this.Color = "Red";
+
+            this.Speak();
+
+        }
+
+    }
+
+
+
+    class Labrador : Dog
+
+    {
+
+        public Labrador(string name) : base(name)
+
+        {
+
+            this.Color = "Blue";
+            this.Speak();
+
+        }
+
+    }
+
+
+
+    class Husky : Dog
+
+    {
+
+        public Husky(string name) : base(name)
+
+        {
+
+            this.Color = "Green";
+            
+            this.Speak();
+
+        }
+
+    }
+       
     class Adoption
     {
         static void Main(string[] args)
@@ -21,10 +104,27 @@ namespace Adoptions
                 if (answer1 == "Dog")
                 {
                     Console.WriteLine("Oh okey you want a " + answer1 + " let's see what we have here");
-                    Console.WriteLine("This is what we have "); //+ Dog1 + Dog2 + Dog3 + Dog4);
-                    Console.ReadLine();
-                }
+                    Start1:
+                    Console.WriteLine("This is what we have Corgi number 1; Labrador number 2; Husky number 3");
+                    string dog1 = Console.ReadLine();
+                    if (dog1 == "1")
+                    {
+                        Dog
+                    }
+                    else if (dog1 == "2")
+                    {
+                        Dog
+                    }
+                    else if (dog1 == "3")
+                    {
+                        Dog
+                    }
+                    else
+                    {
+                        Console.WriteLine("Have you typed in the correct number?");
+                    }
 
+                }
                 else if (answer1 == "Cat")
                 {
                     Console.WriteLine("Oh okey you want a " + answer1 + " let's see what we have here");
@@ -33,17 +133,14 @@ namespace Adoptions
                 }
                 else
                 {
-                    Console.WriteLine("Incorrect typing");
-                    Console.WriteLine("Press any key to continue");
-                    Console.ReadLine();
+                    Console.WriteLine("Incorrect typing or we don't have that type of animal, choose from the given options");
+                    Console.WriteLine("Let's try again ");
+                    Console.WriteLine("Press Enter key to continue");
                     Console.ReadKey();
                     goto Start;
                 }
-
-
-
-
             }
         }
     }
+   
 }
