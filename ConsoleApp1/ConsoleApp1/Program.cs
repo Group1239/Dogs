@@ -38,11 +38,11 @@ namespace Adoptions
 
 
 
-    class Corgi : Dog
+    class Red : Dog
 
     {
 
-        public Corgi(string name) : base(name)
+        public Red(string name) : base(name)
 
         {
 
@@ -56,11 +56,11 @@ namespace Adoptions
 
 
 
-    class Labrador : Dog
+    class Blue : Dog
 
     {
 
-        public Labrador(string name) : base(name)
+        public Blue(string name) : base(name)
 
         {
 
@@ -73,11 +73,11 @@ namespace Adoptions
 
 
 
-    class Husky : Dog
+    class Green : Dog
 
     {
 
-        public Husky(string name) : base(name)
+        public Green(string name) : base(name)
 
         {
 
@@ -109,15 +109,18 @@ namespace Adoptions
                     string dog1 = Console.ReadLine();
                     if (dog1 == "1")
                     {
-                        Dog
+                        Dog a = new Red("Corgi");
+
                     }
                     else if (dog1 == "2")
                     {
-                        Dog
+                        Dog b = new Blue("Labrador");
+
                     }
                     else if (dog1 == "3")
                     {
-                        Dog
+                        Dog c = new Green("Husky");
+
                     }
                     else
                     {
