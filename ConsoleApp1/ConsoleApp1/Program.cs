@@ -38,6 +38,38 @@ namespace Adoptions
 
 
 
+    class Cat
+
+    {
+
+        public Cat(string name)
+
+        {
+
+            this.Name = name;
+
+        }
+
+        public string Name;
+
+        public string Color;
+
+
+
+        public void Speak()
+
+        {
+
+            Console.WriteLine("My name is " + this.Name + " and I am " + this.Color);
+
+        }
+
+
+
+    }
+
+
+
     class Red : Dog
 
     {
@@ -83,6 +115,54 @@ namespace Adoptions
 
             this.Color = "Green";
             
+            this.Speak();
+
+        }
+
+    }
+
+    class Magenta : Cat
+
+    {
+
+        public Magenta(string name) : base(name)
+
+        {
+
+            this.Color = "Magenta";
+
+            this.Speak();
+
+        }
+
+    }
+
+    class Cyan : Cat
+
+    {
+
+        public Cyan(string name) : base(name)
+
+        {
+
+            this.Color = "Cyan";
+
+            this.Speak();
+
+        }
+
+    }
+
+    class Yellow : Cat
+
+    {
+
+        public Yellow(string name) : base(name)
+
+        {
+
+            this.Color = "Yellow";
+
             this.Speak();
 
         }
