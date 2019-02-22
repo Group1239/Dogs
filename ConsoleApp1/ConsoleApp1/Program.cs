@@ -38,7 +38,7 @@ namespace Adoptions
 
 
 
-    class Red : Dog
+    class Red : Animal
 
     {
 
@@ -46,7 +46,7 @@ namespace Adoptions
 
         {
 
-            this.Color = "Black";
+            this.Color = " Black ";
             this.Age = " 6 months old";
             this.Speak();
 
@@ -64,7 +64,7 @@ namespace Adoptions
 
         {
 
-            this.Color = "Pink";
+            this.Color = " Pink ";
             this.Age = " 1 years old";
             this.Speak();
 
@@ -82,7 +82,7 @@ namespace Adoptions
 
         {
 
-            this.Color = "White";
+            this.Color = " White ";
             this.Age = "1 year and 2 months old";
             this.Speak();
 
@@ -90,23 +90,23 @@ namespace Adoptions
 
     }
 
-    class Magenta : Cat
+    class Magenda : Animal
 
     {
 
-        public Magenta(string name) : base(name)
+        public Magenda(string name) : base(name)
 
         {
-
-            this.Color = "Magenta";
-
+             
+            this.Color = "Pink";
+            this.Age = " 3 months old";
             this.Speak();
 
         }
 
     }
 
-    class Cyan : Cat
+    class Cyan : Animal
 
     {
 
@@ -114,24 +114,24 @@ namespace Adoptions
 
         {
 
-            this.Color = "Cyan";
-
+            this.Color = "Purple";
+            this.Age = " 7 months old";
             this.Speak();
 
         }
 
     }
 
-    class Yellow : Cat
+    class Siamese: Animal
 
     {
 
-        public Yellow(string name) : base(name)
+        public Siamese(string name) : base(name)
 
         {
 
             this.Color = "Yellow";
-
+            this.Age = " 3 months old";
             this.Speak();
 
         }
@@ -153,8 +153,10 @@ namespace Adoptions
                 if (answer1 == "Dog")
                 {
                     Console.WriteLine("Oh okey you want a " + answer1 + " let's see what we have here");
-                    Start1:
+                Start1:
                     Console.WriteLine("This is what we have Corgi number 1; Labrador number 2; Husky number 3");
+                    Console.WriteLine("Type in the number of the breed you want to check it out");
+
                     string dog1 = Console.ReadLine();
                     if (dog1 == "1")
                     {
@@ -215,8 +217,64 @@ namespace Adoptions
                 else if (answer1 == "Cat")
                 {
                     Console.WriteLine("Oh okey you want a " + answer1 + " let's see what we have here");
-                    Console.WriteLine("This is what we have "); //+ Cat1 + Cat2 + Cat3 + Cat4);
-                    Console.ReadLine();
+                Start2:
+                    Console.WriteLine("This is what we have ??????/ number 1; ??????? number 2; ????????? number 3");
+                    Console.WriteLine("Type in the number of the breed you want to check it out");
+                    string cat1 = Console.ReadLine();
+                    if (cat1 == "1")
+                    {
+                        Animal a = new Red("???????");
+                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        string accept = Console.ReadLine();
+                        if (accept == "+")
+                        {
+                            Console.WriteLine("Have a good day with your new friend ;)");
+                            Console.ReadKey();
+                        }
+                        else
+                        {
+                            goto Start2;
+                        }
+
+                    }
+                    else if (cat1 == "2")
+                    {
+                        Animal b = new Blue("??????");
+                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        string accept = Console.ReadLine();
+                        if (accept == "+")
+                        {
+                            Console.WriteLine("Have a good day with your new friend ;)");
+                            Console.ReadKey();
+                        }
+                        else
+                        {
+                            goto Start2;
+                        }
+
+                    }
+                    else if (cat1 == "3")
+                    {
+                        Animal c = new Green("????????");
+                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        string accept = Console.ReadLine();
+                        if (accept == "+")
+                        {
+                            Console.WriteLine("Have a good day with your new friend ;)");
+                            Console.ReadKey();
+                        }
+                        else
+                        {
+                            goto Start2;
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("Have you typed in the correct number?");
+                        Console.ReadKey();
+                        goto Start2;
+                    }
                 }
                 else
                 {
