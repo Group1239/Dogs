@@ -224,7 +224,7 @@ namespace Adoptions
                     if (cat1 == "1")
                     {
                         Animal a = new Bengal("Bengal");
-                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        Console.WriteLine("If you want this cat type in + if you want to check another cat press -");
                         string accept = Console.ReadLine();
                         if (accept == "+")
                         {
@@ -240,7 +240,7 @@ namespace Adoptions
                     else if (cat1 == "2")
                     {
                         Animal b = new Persian("Persian");
-                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        Console.WriteLine("If you want this cat type in + if you want to check another cat press -");
                         string accept = Console.ReadLine();
                         if (accept == "+")
                         {
@@ -256,7 +256,7 @@ namespace Adoptions
                     else if (cat1 == "3")
                     {
                         Animal c = new Siamese("Siamese");
-                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        Console.WriteLine("If you want this cat type in + if you want to check another cat press -");
                         string accept = Console.ReadLine();
                         if (accept == "+")
                         {
