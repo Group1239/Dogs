@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Adoptions
 {
-    class Dog
+    class Animal
 
     {
 
-        public Dog(string name)
+        public Animal(string name)
 
         {
 
@@ -19,7 +19,7 @@ namespace Adoptions
         }
 
         public string Name;
-
+        public string Age;
         public string Color;
 
 
@@ -28,7 +28,7 @@ namespace Adoptions
 
         {
 
-            Console.WriteLine("My name is " + this.Name + " and I am " + this.Color);
+            Console.WriteLine("My name is " + this.Name + " my color is " + this.Color + "and I am " + this.Age);
 
         }
 
@@ -38,7 +38,7 @@ namespace Adoptions
 
 
 
-    class Red : Dog
+    class Red : Animal
 
     {
 
@@ -46,8 +46,8 @@ namespace Adoptions
 
         {
 
-            this.Color = "Red";
-
+            this.Color = "Black";
+            this.Age = " 6 months old";
             this.Speak();
 
         }
@@ -56,7 +56,7 @@ namespace Adoptions
 
 
 
-    class Blue : Dog
+    class Blue : Animal
 
     {
 
@@ -64,7 +64,8 @@ namespace Adoptions
 
         {
 
-            this.Color = "Blue";
+            this.Color = "Pink";
+            this.Age = " 1 years old";
             this.Speak();
 
         }
@@ -73,7 +74,7 @@ namespace Adoptions
 
 
 
-    class Green : Dog
+    class Green : Animal
 
     {
 
@@ -81,8 +82,8 @@ namespace Adoptions
 
         {
 
-            this.Color = "Green";
-            
+            this.Color = "White";
+            this.Age = "1 year and 2 months old";
             this.Speak();
 
         }
@@ -109,22 +110,57 @@ namespace Adoptions
                     string dog1 = Console.ReadLine();
                     if (dog1 == "1")
                     {
-                        Dog a = new Red("Corgi");
+                        Animal a = new Red("Corgi");
+                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        string accept = Console.ReadLine();
+                        if (accept == "+")
+                        {
+                            Console.WriteLine("Have a good day with your new friend ;)");
+                            Console.ReadKey();
+                        }
+                        else
+                        {
+                            goto Start1;
+                        }
 
                     }
                     else if (dog1 == "2")
                     {
-                        Dog b = new Blue("Labrador");
+                        Animal b = new Blue("Labrador");
+                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        string accept = Console.ReadLine();
+                        if (accept == "+")
+                        {
+                            Console.WriteLine("Have a good day with your new friend ;)");
+                            Console.ReadKey();
+                        }
+                        else
+                        {
+                            goto Start1;
+                        }
 
                     }
                     else if (dog1 == "3")
                     {
-                        Dog c = new Green("Husky");
+                        Animal c = new Green("Husky");
+                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
+                        string accept = Console.ReadLine();
+                        if (accept == "+")
+                        {
+                            Console.WriteLine("Have a good day with your new friend ;)");
+                            Console.ReadKey();
+                        }
+                        else
+                        {
+                            goto Start1;
+                        }
 
                     }
                     else
                     {
                         Console.WriteLine("Have you typed in the correct number?");
+                        Console.ReadKey();
+                        goto Start1;
                     }
 
                 }
