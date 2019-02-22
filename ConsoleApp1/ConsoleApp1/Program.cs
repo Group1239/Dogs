@@ -22,15 +22,13 @@ namespace Adoptions
 
         public string Color;
 
-        public string Age;
-
 
 
         public void Speak()
 
         {
 
-            Console.WriteLine("My name is " + this.Name + " and I am " + this.Color + this.Age);
+            Console.WriteLine("My name is " + this.Name + " and I am " + this.Color);
 
         }
 
@@ -48,8 +46,8 @@ namespace Adoptions
 
         {
 
-            this.Color = "Brown";
-            this.Age = " 5 months old";
+            this.Color = "Red";
+
             this.Speak();
 
         }
@@ -66,8 +64,7 @@ namespace Adoptions
 
         {
 
-            this.Color = "Pink";
-            this.Age = " 1 year and 2 months old";
+            this.Color = "Blue";
             this.Speak();
 
         }
@@ -84,8 +81,8 @@ namespace Adoptions
 
         {
 
-            this.Color = "White";
-            this.Age = " 3 months old";
+            this.Color = "Green";
+            
             this.Speak();
 
         }
@@ -107,63 +104,27 @@ namespace Adoptions
                 if (answer1 == "Dog")
                 {
                     Console.WriteLine("Oh okey you want a " + answer1 + " let's see what we have here");
-                Start1:
+                    Start1:
                     Console.WriteLine("This is what we have Corgi number 1; Labrador number 2; Husky number 3");
-                    Console.WriteLine("Type in the number of the dog that you want to check out");
                     string dog1 = Console.ReadLine();
                     if (dog1 == "1")
                     {
                         Dog a = new Red("Corgi");
-                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
-                        string accept = Console.ReadLine();
-                        if (accept == "+")
-                        {
-                            Console.WriteLine("Have a good day with your new friend ;)");
-                            Console.ReadKey();
-                        }
-                        else
-                        {
-                            goto Start1;
-                        }
-                  
 
                     }
                     else if (dog1 == "2")
                     {
                         Dog b = new Blue("Labrador");
-                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
-                        string accept = Console.ReadLine();
-                        if (accept == "+")
-                        {
-                            Console.WriteLine("Have a good day with your new friend ;)");
-                            Console.ReadKey();
-                        }
-                        else
-                        {
-                            goto Start1;
-                        }
 
                     }
                     else if (dog1 == "3")
                     {
                         Dog c = new Green("Husky");
-                        Console.WriteLine("If you want this dog type in + if you want to check another dog press -");
-                        string accept = Console.ReadLine();
-                        if (accept == "+")
-                        {
-                            Console.WriteLine("Have a good day with your new friend ;)");
-                            Console.ReadKey();
-                        }
-                        else
-                        {
-                            goto Start1;
-                        }
+
                     }
                     else
                     {
                         Console.WriteLine("Have you typed in the correct number?");
-                        Console.ReadLine();
-                        goto Start1;
                     }
 
                 }
